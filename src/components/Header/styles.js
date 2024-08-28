@@ -9,6 +9,7 @@ width: 100%;
 height: 72px;
 background-color: #fff;
 box-shadow: 2px 3px 5px 0px #00000026;
+z-index: 99;
 `
 
 export const ContainerLeft = styled.div`
