@@ -4,8 +4,7 @@ import Carousel from 'react-elastic-carousel'
 
 import Offers from '../../assets/offers.png'
 import api from '../../services/api'
-import { Container, OfferImg, ContainerItems, Image } from "./styles";
-import { Button } from '../../components'
+import { Container, OfferImg, ContainerItems, Image, ButtonStyle } from "./styles";
 import formatCurrency from '../../utils/formatCurrency'
 
 import { useCart } from "../../hooks/CartContext";
@@ -50,11 +49,11 @@ export function OffersCarousel() {
                         <Image src={product.url} alt="foto do produto" />
                         <p>{product.name}</p>
                         <p>{product.formatedPrice}</p>
-                        <Button
+                        <ButtonStyle
                             onClick={() => {
                                 putProductsInCart(product)
                                 push('/carrinho')
-                            }} style={{ width: '100%', height: '50px', borderRadius: '8px' }}>Peça agora!</Button>
+                            }} style={{ width: '100%', height: '50px', borderRadius: '8px' }}>Peça agora!</ButtonStyle>
                     </ContainerItems>
                 ))}
             </Carousel>

@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import BackgroundImage from '../../assets/bg-login.jpg'
+import BackgroundImage from '../../assets/bg-login.png'
 
 export const Container = styled.div`
 height: 100vh;
@@ -27,13 +27,19 @@ display: flex;
 flex-direction: column;
 justify-content: center;
 
+img{
+    width: 450px;
+    margin-top: -100px;
+    margin-left: -300px;
+}
+
 h1{
 font-size: 24px;
 font-weight: 500;
 line-height: 28.13px;
 text-align: center;
 color: #fff;
-margin-top: 10px;
+margin-top: -30px;
 }
 
 form{
@@ -43,11 +49,12 @@ form{
 `
 
 export const Label = styled.p`
+padding-left: 50px;
 font-size: 12px;
 font-weight: 500;
 line-height: 14.06px;
 color: #fff;
-margin: ${props => (props.error ? '12px 0 5px' : '28px 0 5px')}; 
+margin: ${props => (props.error ? '10px 0 5px' : '20px 0 5px')}; 
 `
 
 export const Input = styled.input`
@@ -57,6 +64,7 @@ border-radius: 5px;
 box-shadow: 3px 3px 10px 0px #4A90E230;
 border: ${props => (props.error ? '2px solid #cc1717;' : 'none')};
 padding-left: 10px;
+margin: 0 auto;
 `
 
 export const SignInLink = styled.p`

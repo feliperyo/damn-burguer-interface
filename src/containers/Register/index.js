@@ -1,6 +1,7 @@
 import React from "react";
 import { useForm } from "react-hook-form"
 import { toast } from 'react-toastify';
+import { useHistory } from "react-router-dom/cjs/react-router-dom.min";
 
 import { Link } from "react-router-dom";
 
@@ -8,13 +9,14 @@ import { yupResolver } from "@hookform/resolvers/yup"
 import * as Yup from 'yup'
 
 import RegisterImg from '../../assets/burguer-register.svg'
-import Logo from '../../assets/logo.svg'
+import Logo from '../../assets/logo.png'
 import api from '../../services/api'
 
 import { Button, ErrorMessage } from '../../components'
 import { Container, RegisterImage, ContainerItems, Label, Input, SignInLink } from './styles'
 
 export function Register() {
+  const { push } = useHistory()
 
   const schema = Yup.object({
     name: Yup.string().required('Digite seu nome'),
@@ -52,6 +54,10 @@ export function Register() {
     } catch (err) {
       toast.error('Falha no sistema, tente novamente');
     }
+
+    setTimeout(() => {
+      push('/login')
+    }, 2000);
   }
 
   return (

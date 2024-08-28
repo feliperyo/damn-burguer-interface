@@ -74,6 +74,7 @@ export function NewProduct() {
     return (
         <Container>
             <form noValidate onSubmit={handleSubmit(onSubmit)}>
+                <h1>Novo produto</h1>
                 <div>
                     <Label>Nome</Label>
                     <Input type="text" {...register('name')} />

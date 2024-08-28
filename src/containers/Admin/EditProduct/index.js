@@ -74,6 +74,7 @@ export function EditProduct() {
     return (
         <Container>
             <form noValidate onSubmit={handleSubmit(onSubmit)}>
+                <h1>Editar produto</h1>
                 <div>
                     <Label>Nome</Label>
                     <Input type="text" {...register('name')} defaultValue={product.name} />

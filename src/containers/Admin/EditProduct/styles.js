@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { Button } from "../../../components";
+import BackgroundImage from '../../../assets/bg-login.png'
 
 export const Container = styled.div`
 width: 100%;
@@ -7,6 +8,8 @@ height: 100%;
 display: flex;
 justify-content: center;
 align-items: center;
+background:url('${BackgroundImage}');
+background-size: cover;
 
 form{
     display: flex;
@@ -15,6 +18,11 @@ form{
     background: #565656;
     border-radius: 10px;
     padding: 30px;
+
+    h1{
+        text-align: center;
+        color: #fff;
+    }
 }
 `
 
@@ -39,6 +47,10 @@ export const ButtonStyles = styled(Button)`
 width: 100%;
 border-radius: 8px;
 margin-top: 25px;
+
+&:hover{
+    background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' rx='8' ry='8' stroke='%23F6FF00FF' stroke-width='3' stroke-dasharray='6%2c 14' stroke-dashoffset='0' stroke-linecap='square'/%3e%3c/svg%3e");
+}
 `
 
 export const LabelUpload = styled.label`

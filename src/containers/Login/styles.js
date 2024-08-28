@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import { Button } from '../../components'
-import BackgroundImage from '../../assets/bg-login.jpg'
+import BackgroundImage from '../../assets/bg-login.png'
 
 export const Container = styled.div`
 height: 100vh;
@@ -28,13 +28,18 @@ display: flex;
 flex-direction: column;
 justify-content: center;
 
+img{
+    width: 450px;
+    margin-top: -220px;
+    margin-left: -305px;
+}
+
 h1{
 font-size: 24px;
 font-weight: 500;
 line-height: 28.13px;
 text-align: center;
 color: #fff;
-margin-top: 100px;
 }
 
 form{
@@ -46,14 +51,16 @@ form{
 export const Label = styled.p`
 font-size: 12px;
 font-weight: 500;
+padding-left: 50px;
 line-height: 14.06px;
 color: #fff;
-margin: ${props => (props.error ? '18px 0 5px' : '28px 0 5px')};
+margin: ${props => (props.error ? '16px 0 5px' : '26px 0 5px')};
 `
 
 export const Input = styled.input`
-width: 391.42px;
-height: 38.32px;
+width: 391px;
+height: 38px;
+margin: 0 auto;
 border-radius: 5px;
 box-shadow: 3px 3px 10px 0px #4A90E230;
 border: ${props => (props.error ? '2px solid #cc1717;' : 'none')};

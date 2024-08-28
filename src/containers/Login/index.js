@@ -9,7 +9,7 @@ import * as Yup from 'yup'
 
 import { useUser } from "../../hooks/UserContext";
 import LoginImg from '../../assets/burguer-login.svg'
-import Logo from '../../assets/logo.svg'
+import Logo from '../../assets/logo.png'
 import api from '../../services/api'
 
 
@@ -75,7 +75,7 @@ export function Login() {
           <Input type="password" {...register("password")} error={errors.password?.message} />
           <ErrorMessage>{errors.password?.message}</ErrorMessage>
 
-          <ButtonStyle type="submit" style={{ marginTop: 75, marginBottom: 25 }}>Entrar</ButtonStyle>
+          <ButtonStyle type="submit" style={{ marginTop: 25, marginBottom: 25 }}>Entrar</ButtonStyle>
         </form>
 
         <SignInLink>Não possui conta? <Link style={{ color: 'white' }} to="/cadastro">Cadastrar</Link></SignInLink>
