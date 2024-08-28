@@ -3,7 +3,7 @@ import { useHistory } from "react-router-dom/cjs/react-router-dom.min";
 
 import { useUser } from "../../hooks/UserContext";
 
-import Cart from '../../assets/cart-header.svg'
+import Cart from '../../assets/cart-header.png'
 import Person from '../../assets/person-header.png'
 
 import { Container, ContainerLeft, PageLink, ContainerRight, Line, ContainerText, PageLinkExit } from "./styles";

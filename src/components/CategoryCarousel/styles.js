@@ -26,6 +26,11 @@ export const Container = styled.div`
     background-color: #bebebf;
     color: #EFEFEF;
     }
+
+    .rec-dot_active{
+        background-color: #f6ff00;
+        box-shadow: 0 0 1px 3px #ff0000;
+    }
 `
 
 export const CategoryImg = styled.img`

@@ -19,7 +19,7 @@ gap: 30px;
 export const PageLink = styled.a`
 cursor: pointer;
 text-decoration: none;
-color: ${props => props.isActive ? '#9758A6' : '#555'};
+color: ${props => props.isActive ? '#ff0000' : '#555'};
 font-weight: ${props => props.isActive ? 'bold' : 'normal'};
 font-size: 16px;
 line-height: 19px;
@@ -51,5 +51,5 @@ cursor: pointer;
 font-size: 14px;
 font-weight: 700;
 line-height: 16.41px;
-color: #9758A6;
+color: #ff0000;
 `
